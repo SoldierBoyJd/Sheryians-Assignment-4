@@ -1,0 +1,114 @@
+/* CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  /* background-color: black; */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.8fr;
+  grid-template-columns: 0.3fr 0.8fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "side-navBar left-card left-card portfolio portfolio portfolio"
+    "side-navBar left-card left-card portfolio portfolio portfolio"
+    "side-navBar left-card left-card video-player video-player right-sideDiv"
+    "side-navBar left-card left-card video-player video-player right-sideDiv"
+    "side-navBar left-card left-card video-player video-player right-sideDiv"
+    "side-navBar left-card left-card appleDiv achievementsDiv achievementsDiv";
+  gap: 30px;
+  padding: 40px;
+}
+
+.side-navBar {
+  /* background-color: aqua; */
+  grid-area: side-navBar;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.left-card {
+  color: white;
+  grid-area: left-card;
+
+  background-color: #8184D2;
+
+  overflow: hidden;
+
+  position: relative;
+  padding: 30px;
+
+  clip-path: path("M 30 70 L 190 70 L 230 45 L 430 45 A 40 40 0 0 1 470 85 L 470 660 A 40 40 0 0 1 430 702 L 40 702 A 40 40 0 0 1 0 660 L 0 100 A 40 40 0 0 1 30 70 Z");
+  background-image: url('img1.png');
+  background-position: 40px -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-card h1
+{
+  font-size: 40px;
+}
+
+
+.portfolio {
+  grid-area: portfolio;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.video-player {
+  grid-area: video-player;
+  background-color: brown;
+  border-radius: 30px;
+  background-image: url('');
+}
+
+.right-sideDiv {
+  grid-area: right-sideDiv;
+  background-color: chartreuse;
+  border-radius: 30px;
+}
+
+.appleDiv {
+  grid-area: appleDiv;
+  background-color: #585858;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.achievementsDiv {
+  grid-area: achievementsDiv;
+  background-color: darkred;
+  border-radius: 30px;
+}
+
+.side-text {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  white-space: nowrap;
+  font-size: 16px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+  margin-left: 50px;
+}
+
