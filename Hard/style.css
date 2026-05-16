@@ -16,7 +16,7 @@ main {
   width: 100%;
   display: grid;
   /* background-color: black; */
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
   grid-template-columns: 0.3fr 0.8fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "side-navBar left-card left-card portfolio portfolio portfolio"
@@ -73,13 +73,28 @@ main {
   grid-area: video-player;
   background-color: brown;
   border-radius: 30px;
-  background-image: url('');
+  background-image: url('img3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .right-sideDiv {
   grid-area: right-sideDiv;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-sideDiv div
+{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  position: relative;
 }
 
 .appleDiv {
@@ -96,8 +111,17 @@ main {
 
 .achievementsDiv {
   grid-area: achievementsDiv;
-  background-color: darkred;
+  /* background-color: darkred; */
   border-radius: 30px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.achievementsDiv div
+{
+  flex: 1;
+  position: absolute;
 }
 
 .side-text {
