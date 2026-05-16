@@ -5,10 +5,11 @@ A collection of **bento-style UI layouts** built with pure HTML and CSS, organiz
 ## Previews
 
 ### Easy — Butusic Art Gallery
-![Easy layout preview](Screenshot%20(391).png)
+![Easy layout preview](Screenshot%202026-05-12%20192428.png)
 
 ### Medium — Designer Portfolio
-![Medium layout preview](Screenshot%202026-05-12%20192428.png)
+
+![Medium layout preview](Screenshot%20(391).png)
 
 ### Hard — Jon Daniel Portfolio
 ![Hard layout preview](Screenshot%202026-05-17%20003407.png)
@@ -33,7 +34,7 @@ Each folder contains:
 | Level  | Layout Style | Key Concepts |
 |--------|-------------|--------------|
 | Easy   | Multi-panel bento grid | CSS Grid, Flexbox, image placement |
-| Medium | Asymmetric card grid | Grid areas, icon fonts, responsive cards |
+| Medium | Asymmetric card grid | Grid areas, icon fonts |
 | Hard   | Full-page portfolio layout | Complex grid, sidebar nav, overlapping elements |
 
 ## Tech Stack
